@@ -17,4 +17,12 @@ class PessoaTest {
         Pessoa pessoa = new Pessoa("Maria", 2010, 2024);
         assertFalse(pessoa.isMaiorDeIdade());
     }
+
+    @Test
+    void testNomeEhString() {
+        Pessoa pessoa = new Pessoa("João", 2000, 2024);
+        assertInstanceOf(String.class, pessoa.getNome());
+    }
 }
+
+
